@@ -88,9 +88,9 @@ section {
 
 section h2 {
   font-size: 1.6rem;
+  color: var(--text-dark);
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  color: var(--heading-color);
   margin-bottom: 1rem;
 }
 
