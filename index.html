@@ -1,82 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Aldrich Fernandes | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Optionally include a framework like Tailwind or Bootstrap -->
 </head>
-
 <body>
   <header>
-    <nav>
+    <div class="container">
       <h1>Aldrich Fernandes</h1>
+      <p>Email: <a href="mailto:aldrich.fernandes05@gmail.com">aldrich.fernandes05@gmail.com</a> | Contact: 07725407097</p>
+    </div>
+    <nav>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#CV/Resume">CV/Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a student passionate about AI, robotics, and software development.  
-      This is my portfolio where I'll share my projects and experiences.
-    </p>
-  </section>
+  <main class="container">
+    <!-- Profile -->
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>Inquisitive undergraduate, with diverse experience in teamwork and collaboration, and a passion for problem-solving and personal technical development, demonstrated through a strong academic record and personal projects.</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
 
-    <div class="project">
-      <h3><a href="https://github.com/Aldrich-Fernandes/LoanApproval">Mortgage Egibility Checker </a></h3>
-      <p>
-        A mortgage eligibility checker, built entirely from scratch in Python with minimal imports for my A-Level NEA project. The tool uses a logistic regression model embedded within a neural network framework to evaluate the strength of mortgage applications based on historical applicant data. Functionality includes model saving/loading, hyperparameter tuning, and efficient data preprocessing, making it both practical and adaptable for real-world decision-making.
-        <h4>Key Features</h4>
+      <article>
+        <h3>Sales Assistant | Screwfix</h3>
+        <p><em>September 2024 – Current</em></p>
         <ul>
-            <li>User-Friendly Interface - Simple, intuitive input system for financial and personal details.</li>
-            <li>Real-Time Predictions - Instant feedback on loan approval likelihood using custom-built ML models.</li>
-            <li>Customizable Model Training - Adjustable hyperparameters and training settings for experimentation.</li>
-            <li>Model Persistence - Save and load trained models for repeated use without retraining.</li>
-            <li>Data Preprocessing Pipeline - Streamlined handling of applicant data to ensure clean, consistent inputs.</li>
-            <li>From-Scratch Neural Network - Logistic regression within a neural framework coded without external ML libraries.</li>
+          <li>Built rapport with regular customers by identifying patterns in issues and applying proven solutions.</li>
+          <li>Supported warehouse operations by organising inventory and maintaining a clean workspace.</li>
+          <li>Volunteered for extra shifts to ensure smooth operations and teamwork.</li>
         </ul>
+      </article>
 
-        <h4>Skills</h4>
+      <article>
+        <h3>Volunteer Retail Assistant | North London Hospice</h3>
+        <p><em>April 2021 – November 2021</em></p>
         <ul>
-            <li>Python</li>
-            <li>Object-Oriented design with Packaged components</li>
-            <li>Unit Testing</li>
-            <li>MatPlotLib for model analysis</li>
+          <li>Supported hospice retail operations during lockdown with integrity and commitment.</li>
+          <li>Collaborated in a small team (2–3 members) to deliver consistent service.</li>
+          <li>Independently managed a clean, well-stocked storefront while assisting customers.</li>
         </ul>
-      </p>
-    </div>
+      </article>
 
-    <div class="project">
-      <h3>🤖 Project 2</h3>
-      <p>Another project — you can link to GitHub repos or demos.</p>
-    </div>
-  </section>
+      <article>
+        <h3>Cadet Staff Sergeant | Combined Cadet Force</h3>
+        <p><em>November 2019 – July 2024</em></p>
+        <ul>
+          <li>Led and mentored younger cadets, representing the contingent at recruitment events.</li>
+          <li>Organised and managed cadet activities, ensuring discipline and performance.</li>
+          <li>Displayed resilience and adaptability by commanding training exercises and expeditions.</li>
+        </ul>
+      </article>
 
-  <section id="CV/Resume">
-    <h2>CV</h2>
-    <p>Find my CV Here: <a href="">CV/Resume</a></p>
-  </section>
+      <article>
+        <h3>Mentoring Work Experience | St Ignatius College</h3>
+        <p><em>November 2022 – July 2023</em></p>
+        <ul>
+          <li>Provided one-to-one and group maths tutoring, adapting to different learning styles.</li>
+          <li>Guided students academically and socially, developing strong communication skills.</li>
+          <li>Supported a summer camp by encouraging collaboration and building confidence.</li>
+        </ul>
+      </article>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="aldrich.fernandes05@gmail.com">aldrich.fernandes05@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Aldrich-Fernandes" target="_blank">github.com/Aldrich-Fernandes</a></p>
-  </section>
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>King’s College London</strong> (2024 – Current)<br>
+          BSc Artificial Intelligence with a Year in Industry
+        </li>
+        <li>
+          <strong>St Ignatius College</strong> (2017 – 2024)<br>
+          A-Levels: A*, A, A (Maths, Further Maths, Computer Science)<br>
+          9 GCSEs with an average grade of 8.2
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article>
+        <h3>Python Mini Games</h3>
+        <p>Developed Chess, Pong, Battleship, and a 2D Platformer in Python.</p>
+        <p><strong>Skills:</strong> Python, Turtle, Pygame, Game Development</p>
+      </article>
+
+      <article>
+        <h3>Loan Approval Predictor</h3>
+        <p>Built a logistic regression neural network in Python to predict home loan approvals.</p>
+        <p><strong>Skills:</strong> Python, Machine Learning, Neural Networks, Data Structures</p>
+      </article>
+
+      <article>
+        <h3>Super Lario (JavaFX Platformer)</h3>
+        <p>Created a 2D platformer game in JavaFX as a group project.</p>
+        <p><strong>Skills:</strong> Java, JavaFX, Team Collaboration, Game Development</p>
+      </article>
+
+      <article>
+        <h3>ROS Object Recognition & Retrieval Robot</h3>
+        <p>Designed a robot using YOLOv4 for object detection, room classification, and voice-controlled item retrieval.</p>
+        <p><strong>Skills:</strong> ROS, Python, Computer Vision, YOLOv4, Voice Control, State Machines, Robotics Simulation</p>
+      </article>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Aldrich Fernandes</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
