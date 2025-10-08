@@ -2,84 +2,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aldrich Fernandes | Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>Aldrich Fernandes</h1>
-    <p>Email: <a href="mailto:aldrich.fernandes05@gmail.com">aldrich.fernandes05@gmail.com</a> | Contact: 07725407097</p>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#education">Education</a></li>
+    <nav class="navbar">
+      <div class="logo">A.F</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <section id="profile">
-      <h2>Profile</h2>
-      <p>
-        Hi, I am a 2nd year student studying Artificial Intelligence (with a year in industry) BSc at King's College London. 
-        I've explored diverse areas of computer science—from artificial intelligence and robotics to game development in Python and Java. 
-        I'm currently seeking placements for 2026/27 in the AI and Robotics sectors.
-      </p>
-    </section>
+  <section class="hero">
+    <h1>Hi, I'm <span>Aldrich Fernandes</span></h1>
+    <p>AI & Robotics Student | Portfolio</p>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+      Hi, I am a 2nd year student studying Artificial Intelligence (with a year in industry) BSc at King's College London. 
+      I've explored diverse areas of computer science—from artificial intelligence and robotics to game development in Python and Java. <br><br>
+      I'm currently seeking placements for 2026/27 in the AI and Robotics sectors.
+    </p>
+  </section>
 
-      <div class="cards">
-        <article class="card">
-          <h3>Basic Loan Approval Predictor</h3>
-          <p>A neural network based logistic regression model trained and used to predict strenght of a mortgage application.</p>
-          <p><strong>Skills:</strong> Python, Machine Learning, Neural Networks, Data Structures</p>
-        </article>
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Basic Loan Approval Predictor</h3>
+        <p>A neural network based logistic regression model trained and used to predict strenght of a mortgage application.</p>
+        <p><strong>Skills:</strong> Python, Machine Learning, Neural Networks, Data Structures</p>
+        <a href="#" class="card-link">View Project</a>
       </div>
 
-      <div class="cards">
-        <article class="card">
-          <h3>Super Lario (JavaFX Platformer)</h3>
-          <p>Created a 2D platformer game in JavaFX as a group project.</p>
-          <p><strong>Skills:</strong> Java, JavaFX, Team Collaboration, Game Development</p>
-        </article>
+      <div class="card">
+        <h3>Super Lario (JavaFX Platformer)</h3>
+        <p>Created a 2D platformer game in JavaFX as a group project.</p>
+        <p><strong>Skills:</strong> Java, JavaFX, Team Collaboration, Game Development</p>
+        <a href="#" class="card-link">View Project</a>
       </div>
 
-      <div class="cards">
-        <article class="card">
-          <h3>ROS Object Recognition & Retrieval Robot</h3>
-          <p>Designed a robot using YOLOv4 for object detection, room classification, and voice-controlled item retrieval.</p>
-          <p><strong>Skills:</strong> ROS, Python, Computer Vision, YOLOv4, Voice Control, State Machines, Robotics Simulation</p>
-        </article>
+      <div class="card">
+        <h3>ROS Object Recognition & Retrieval Robot</h3>
+        <p>Designed a robot using YOLOv4 for object detection, room classification, and voice-controlled item retrieval.</p>
+        <p><strong>Skills:</strong> ROS, Python, Computer Vision, YOLOv4, Voice Control, State Machines, Robotics Simulation</p>
+        <a href="#" class="card-link">View Project</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <article class="card">
-        <h3><strong>King's College London</strong> (2024 - Current)</h3>
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>King's College London | 2024 - Current</h3>
         <p>
-          BSc Artificial Intelligence with a Year in Industry
+          <Strong> BSc</Strong> Artificial Intelligence with a Year in Industry
         </p>
-      </article>
+      </div>
 
-      <article class="card">
-        <h3><strong>St Ignatius College</strong> (2017 - 2024)</h3>
+      <div class="card">
+        <h3>St Ignatius College | 2017 - 2024</h3>
         <p>
-          A-Levels: A*, A, A (Maths, Further Maths, Computer Science)
-          9 GCSEs with an average grade of 8.2
+          <strong>A-levels: </strong> A*, A, A (Maths, Further Maths, Computer Science)<br>
+          <strong>GCSEs: </strong> 9 subjects with average grade of 8.2
         </p>
-      </article>
-    </section>
-  </main>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>TBC</h3>
+        <p>...</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-text">Want to work together? Reach out via email or social media!</p>
+    <a href="mailto:aldrich.fernandes@example.com" class="contact-btn">Get in Touch</a>
+  </section>
 
   <footer>
     <p>© 2025 Aldrich Fernandes</p>
