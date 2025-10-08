@@ -1,0 +1,208 @@
+/* ======================================
+   Global Variables
+====================================== */
+:root {
+  --color-bg: #0d0d0d;              /* Main background */
+  --color-text: #eaeaea;            /* Default Text */
+  --color-accent: #5c5cff;          /* Highlights and Emphasis */
+  --color-muted: #8a8a8a;           /* Paragraphs and Content */
+  --color-card-bg: #1a1a1a;         /* Cards */
+
+  --font-main: 'Inter', sans-serif;
+}
+
+/* ======================================
+   Global Styles
+====================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 1rem;
+  color: var(--color-muted);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ======================================
+   Navbar
+====================================== */
+header {
+  background: transparent;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+/* ======================================
+   Hero
+====================================== */
+.hero {
+  text-align: center;
+  padding: 8rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: var(--color-accent);
+}
+
+.hero p {
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-size: 1.2rem;
+}
+
+/* ======================================
+   Cards
+====================================== */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr), );
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--color-card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(92, 92, 255, 0.1);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.card p {
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: var(--color-accent);
+}
+
+/* ======================================
+   Contact
+====================================== */
+.contact-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* ======================================
+   Footer
+====================================== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  border-top: 1px solid #1e1e1e;
+}
+
+/* ======================================
+   Responsive
+====================================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
