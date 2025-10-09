@@ -31,6 +31,7 @@ section {
   padding: 3.5rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  scroll-margin-top: 40px;
 }
 
 .section-title {
@@ -120,7 +121,7 @@ header {
 ====================================== */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr), );
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
