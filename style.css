@@ -145,9 +145,13 @@ header {
   color: var(--color-accent);
 }
 
-.card p {
+.card p, ul{
   color: var(--color-muted);
   margin-bottom: 1rem;
+}
+.card li{
+  color: var(--color-muted);
+  margin-left: 1rem; 
 }
 
 .card-link {
@@ -189,6 +193,10 @@ footer {
   font-size: 0.9rem;
   color: var(--color-muted);
   border-top: 1px solid #1e1e1e;
+}
+
+footer a{
+  color: (--color-accent);
 }
 
 /* ======================================
