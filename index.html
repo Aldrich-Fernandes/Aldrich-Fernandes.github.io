@@ -4,169 +4,274 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aldrich Fernandes, Artificial Intelligence student at King's College London working on robotics and machine learning." />
   <title>Aldrich Fernandes | Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">A.F</div>
+      <a href="#top" class="logo">A.F</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Hi, I'm <span>Aldrich Fernandes</span></h1>
-    <p>Artificial Intelligence Student @ King's College London (KCL)</p>
-  </section>
+  <main id="top">
+    <section class="hero">
+      <h1>Hi, I'm <span>Aldrich Fernandes</span></h1>
+      <p>Artificial Intelligence Student @ King's College London (KCL)</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="assets/CV/Aldrich_CV.pdf">View CV</a>
+        <a class="btn" href="https://github.com/Aldrich-Fernandes">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/aldrich-fernandes-31b764256/">LinkedIn</a>
+      </div>
+    </section>
 
-  <section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
-    <p class="section-text">
-      I am a 3rd year student studying Artificial Intelligence BSc at King's College London. 
-      I've explored diverse areas of computer science from artificial intelligence and robotics to game development in Python and Java. <br><br>
-    </p>
-  </section>
+    <section id="about">
+      <h2 class="section-title">About me</h2>
+      <p class="section-text">
+        I am a 3rd year student studying Artificial Intelligence BSc at King's College London.
+        I've explored diverse areas of computer science from artificial intelligence and robotics to game development in Python and Java.
+      </p>
+    </section>
 
-  <section id="projects">
-    <h2 class="section-title">Personal Projects</h2>
-      <div class="card-container">
-        
-        <div class="card">
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <article class="job">
+          <p class="job-date">Oct 2025 - Present</p>
+          <div class="job-body">
+            <h3>Learning Autonomous Service Robots (LASR)</h3>
+            <p class="job-org">Sensible Robots Research Lab @ KCL</p>
+            <p>Core member of the competitive robotics team representing King's College London internationally at RoboCup@Home.</p>
+            <ul class="bullets">
+              <li>Helped system architecture migration from ROS 1 (Noetic) to ROS 2 (Humble), modernizing the entire codebase ahead of RoboCup 2026 in Incheon, South Korea.</li>
+              <li>Engineered the comprehensive HRI "Receptionist" task software, seamlessly chaining bag-carrying, person-following, and guest-seating subsystems.</li>
+              <li>Assisted in the deployment testing and expansion of a natural-language-to-task-planning pipeline to automate executable command parsing for the GPSR task.</li>
+              <li>Co-presented the lab's peer-reviewed research poster to international robotics teams and industry experts.</li>
+              <li>Onboarded and mentored new student members on codebase standards, version control, and ROS.</li>
+            </ul>
+            <ul class="tags">
+              <li>ROS (Noetic / Humble)</li><li>Python</li><li>YASMIN (State Machines)</li><li>Task Planning</li><li>Robot Manipulation</li><li>Gazebo Simulation</li><li>Linux (Ubuntu)</li><li>Git &amp; Agile</li><li>Mentoring</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <p class="job-date">Oct 2026 - Present</p>
+          <div class="job-body">
+            <h3>Graduate Teaching Assistant</h3>
+            <p class="job-org">King's College London</p>
+            <p>Teaching assistant for Level 5 robotics modules, running hands-on labs where students build and deploy robot software on real hardware.</p>
+            <ul class="bullets">
+              <li>Lead lab sessions teaching students to write Python nodes in ROS and deploy them to TurtleBot3 Waffle Pi robots over a Linux-based workflow.</li>
+              <li>Guide students through core mobile robotics concepts in practice, including SLAM for mapping and localisation on the physical robots.</li>
+              <li>Diagnose and troubleshoot student hardware and software issues on the Waffle Pi platform, from network and ROS configuration problems to sensor and drive faults.</li>
+            </ul>
+            <ul class="tags">
+              <li>ROS</li><li>Python</li><li>Linux (Ubuntu)</li><li>SLAM</li><li>TurtleBot3 Waffle Pi</li><li>Teaching</li><li>Technical Support</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <p class="job-date">Aug 2026 - Present</p>
+          <div class="job-body">
+            <h3>Robotics Software Developer &amp; Demonstrator</h3>
+            <p class="job-org">King's College London · Industry &amp; Open Day Events</p>
+            <p>Co-develop and present Human-Robot Interaction software for the PAL Robotics TIAGo robot, used at university Open Days and industry showcases.</p>
+            <ul class="bullets">
+              <li>Work in a team of two to develop ROS2 software for TIAGo, extending the HRI coursework codebase for public-facing use.</li>
+              <li>Exploring a demo of TIAGo's arm grasping and manipulation.</li>
+              <li>Run live demos for prospective students, visitors and industry guests, explaining how the robot works to non-technical audiences.</li>
+            </ul>
+            <ul class="tags">
+              <li>ROS2</li><li>Python</li><li>TIAGo</li><li>Human-Robot Interaction</li><li>Public Speaking</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <p class="job-date">Jun 2026 - Jul 2026</p>
+          <div class="job-body">
+            <h3>King's Undergraduate Research Fellow (KURF)</h3>
+            <p class="job-org">King's College London</p>
+            <p>Completed an undergraduate research fellowship under Dr. Matteo Leonetti on "Robots for Healthy Ageing: Engineering Socially Assistive AI." Focused on agile development for the PAL Robotics TIAGo platform, physical deployment validation, and international research presentation.</p>
+            <ul class="bullets">
+              <li>
+                <strong>Developed autonomous HRI (Human-Robot Interaction) behaviors:</strong>
+                <ul class="bullets">
+                  <li>Programmed guest-seating behaviors utilizing computer vision to dynamically identify available seating.</li>
+                  <li>Implemented gesture-controlled bag handover and placement using real-time body keypoint detection.</li>
+                  <li>Developed a robust person-following algorithm equipped with autonomous recovery behaviors.</li>
+                </ul>
+              </li>
+              <li>Physically deployed and tested the team's simulation-based GPSR algorithm for RoboCup 2026, building the task state machine and integrating essential codebase skills.</li>
+              <li>Contributed to migrating the open-source codebase from EOL ROS Noetic to LTS ROS Humble, resolving complex dependency updates and documenting syntax changes.</li>
+              <li>Showcased research outputs and competed at RoboCup 2026 in Incheon, presenting findings to international robotics teams.</li>
+            </ul>
+            <ul class="tags">
+              <li>ROS2 (Humble)</li><li>Python</li><li>Human-Robot Interaction (HRI)</li><li>Computer Vision</li><li>State Machines (YASMIN)</li><li>Agile Development</li><li>Empirical Research</li><li>PAL TIAGo API</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+
+        <article class="project">
+          <p class="project-meta">Team project - Open source</p>
+          <h3>LASR RoboCup@Home Codebase</h3>
+          <p>The open-source ROS2 codebase behind King's College London's RoboCup@Home team, running on the PAL Robotics TIAGo robot. Contributed to the ROS Noetic to ROS2 Humble migration and built task software for the Receptionist (HRI) and GPSR challenges.</p>
+          <ul class="tags">
+            <li>ROS2 (Humble)</li><li>Python</li><li>YASMIN</li><li>TIAGo</li><li>RoboCup@Home</li>
+          </ul>
+          <a href="https://github.com/LASR-at-Home/Base" class="project-link">View on GitHub</a>
+        </article>
+
+        <article class="project">
+          <p class="project-meta">Personal project</p>
           <h3>Mortgage Application Risk Classifier</h3>
           <p>Developed a machine learning model utilizing logistic regression and neural network concepts to evaluate and predict the risk strength of mortgage applications.</p>
-          <p><strong>Skills:</strong> Python, Machine Learning, Neural Networks, Data Structures, Git</p>
-          <a href="https://github.com/Aldrich-Fernandes/LoanApproval" class="card-link">GitHub</a>
-        </div>
+          <ul class="tags">
+            <li>Python</li><li>Machine Learning</li><li>Neural Networks</li><li>Data Structures</li><li>Git</li>
+          </ul>
+          <a href="https://github.com/Aldrich-Fernandes/LoanApproval" class="project-link">View on GitHub</a>
+        </article>
 
-        <div class="card">
-          <h3>Classic Game Clones: Chess & Pong</h3>
+        <article class="project">
+          <p class="project-meta">Personal project</p>
+          <h3>Classic Game Clones: Chess &amp; Pong</h3>
           <p>Engineered fully playable clones of classic arcade and board games, implementing core game logic, state management, and rendering.</p>
-          <p><strong>Skills:</strong> Python, Pygame, Object-Oriented Programming (OOP), Game Development</p>
-          <a href="https://github.com/Aldrich-Fernandes/Chess" class="card-link">GitHub</a>
-        </div>
+          <ul class="tags">
+            <li>Python</li><li>Pygame</li><li>Object-Oriented Programming (OOP)</li><li>Game Development</li>
+          </ul>
+          <a href="https://github.com/Aldrich-Fernandes/Chess" class="project-link">View on GitHub</a>
+        </article>
 
-        <div class="card">
+        <article class="project">
+          <p class="project-meta">Personal project</p>
           <h3>Situational Music Recommender</h3>
           <p>Built a containerized, microservice-based application that generates personalized music recommendations by analyzing image context and processing LLM conversations.</p>
-          <p><strong>Skills:</strong> Docker, Docker Compose, FastAPI, Python, MongoDB, Git, CI/CD, Pytest, RabbitMQ, SSL</p>
-          <a href="https://github.com/Aldrich-Fernandes/situational-music-recommender" class="card-link">GitHub</a>
-        </div>
+          <ul class="tags">
+            <li>Docker</li><li>Docker Compose</li><li>FastAPI</li><li>Python</li><li>MongoDB</li><li>Git</li><li>CI/CD</li><li>Pytest</li><li>RabbitMQ</li><li>SSL</li>
+          </ul>
+          <a href="https://github.com/Aldrich-Fernandes/situational-music-recommender" class="project-link">View on GitHub</a>
+        </article>
 
-      </div><br>
-    
-    <h2 class="section-title">Academic Projects</h2>
-      <div class="card-container">
-        <div class="card">
-          <h3>ROS Object Recognition & Retrieval Robot</h3>
+        <article class="project">
+          <p class="project-meta">Academic project</p>
+          <h3>ROS Object Recognition &amp; Retrieval Robot</h3>
           <p>Designed a robot using YOLOv4 for object detection, room classification, and voice-controlled item retrieval.</p>
-          <p><strong>Skills:</strong> ROS noetic, Python, Computer Vision, YOLOv4, Voice Control, State Machines, Gazebo</p>
-        </div>
+          <ul class="tags">
+            <li>ROS Noetic</li><li>Python</li><li>Computer Vision</li><li>YOLOv4</li><li>Voice Control</li><li>State Machines</li><li>Gazebo</li>
+          </ul>
+        </article>
 
-        <div class="card">
+        <article class="project">
+          <p class="project-meta">Academic project · Team of 4</p>
           <h3>Super Lario (JavaFX Platformer)</h3>
-          <p>Created a 2D platformer game using JavaFX withing a collaborative environment with 3 other developers.</p>
-          <p><strong>Skills:</strong> Java, JavaFX, Team Collaboration, Game Development, Git</p>
-        </div>
-      </div><br>
-  </section>
+          <p>Created a 2D platformer game using JavaFX within a collaborative environment with 3 other developers.</p>
+          <ul class="tags">
+            <li>Java</li><li>JavaFX</li><li>Team Collaboration</li><li>Game Development</li><li>Git</li>
+          </ul>
+          <!-- <a href="https://github.com/Aldrich-Fernandes/Super-Lario" class="project-link">View on GitHub</a> -->
+        </article>
 
-  <section id="education">
-    <h2 class="section-title">Education</h2>
-      <div class="card-container">
-        <div class="card">
-          <h3>King's College London | 2024 - 2028</h3>
-          <p>
-            <h4><Strong> BSc</Strong> Artificial Intelligence <br><br></h4>
+      </div>
+    </section>
 
-            <p>Key Modules (to name a few): </p>
-              <ul>
-                <li>Cloud Computing for Artifical Intelligence </li>
-                <li>Web and Internet Systems </li>
-                <li>Machine Learning </li>
-                <li>Introduction to Robotics </li>
-                <li>Introduction to Professional Practice</li>
-                <li>Logic and Knowledge Represenation </li>
-                <li>Mathematics and Statistics for Artifical Intelligence </li>
-              </ul>
-          </p>
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
         </div>
 
-        <div class="card">
-          <h3>St Ignatius College | 2017 - 2024</h3>
-          <p>
-            <strong>A-levels: </strong> A*, A, A (Maths, Further Maths, Computer Science)<br>
-            <strong>GCSEs: </strong> 9 subjects with average grade of 8.2
-          </p>
+        <div class="skill-group">
+          <h3>Robotics</h3>
+          <ul class="tags">
+            <li>ROS2 (Humble)</li><li>ROS (Noetic)</li><li>YASMIN</li><li>PAL TIAGo API</li><li>Gazebo</li><li>Task Planning</li><li>Robot Manipulation</li><li>Human-Robot Interaction</li>
+          </ul>
         </div>
-      </div>
-  </section>
 
-  <section id="experience">
-    <h2 class="section-title">Experience</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>King's Undergraduate Research Fellow (KURF) | King's College London</h3>
-        <h4><strong>Duration: June 1, 2026 - July 5, 2026</strong></h4>
-        <p>Completed an undergraduate research fellowship under Dr. Matteo Leonetti on "Robots for Healthy Ageing: Engineering Socially Assistive AI." Focused on agile development for the PAL Robotics TIAGo platform, physical deployment validation, and international research presentation.</p>
-        <ul>
-          <li>
-            <strong>Developed autonomous HRI (Human-Robot Interaction) behaviors:</strong>
-            <ul>
-              <li>Programmed guest-seating behaviors utilizing computer vision to dynamically identify available seating.</li>
-              <li>Implemented gesture-controlled bag handover and placement using real-time body keypoint detection.</li>
-              <li>Developed a robust person-following algorithm equipped with autonomous recovery behaviors.</li>
-            </ul>
-          </li>
-          <li>Physically deployed and tested the team's simulation-based GPSR algorithm for RoboCup 2026, building the task state machine and integrating essential codebase skills.</li>
-          <li>Contributed to migrating the open-source codebase from EOL ROS Noetic to LTS ROS Humble, resolving complex dependency updates and documenting syntax changes.</li>
-          <li>Showcased research outputs and competed at RoboCup 2026 in Incheon, presenting findings to international robotics teams.</li>
-        </ul>
-        <p><strong>Skills:</strong> ROS2 (Humble), Python, Human-Robot Interaction (HRI), Computer Vision, State Machines (YASMIN), Agile Development, Empirical Research, PAL TIAGo API</p>
-      </div>
+        <div class="skill-group">
+          <h3>AI &amp; Machine Learning</h3>
+          <ul class="tags">
+            <li>Machine Learning</li><li>Neural Networks</li><li>Computer Vision</li><li>YOLOv4</li><li>Ollama</li><li>Whisper</li>
+          </ul>
+        </div>
 
-      <div class="card">
-        <h3>Learning Autonomous Service Robots (LASR) | Sensible Robots Research Lab @ KCL</h3>
-        <h4><strong>Duration: October 2025 - Present</strong></h4>
-        <p>Core member of the competitive robotics team representing King's College London internationally at RoboCup@Home.</p>
-        <ul>
-          <li>Helped system architecture migration from ROS 1 (Noetic) to ROS 2 (Humble), modernizing the entire codebase ahead of RoboCup 2026 in Incheon, South Korea.</li>
-          <li>Engineered the comprehensive HRI "Receptionist" task software, seamlessly chaining bag-carrying, person-following, and guest-seating subsystems.</li>
-          <li>Assisted in the deployment testing and expansion of a natural-language-to-task-planning pipeline to automate executable command parsing for the GPSR task.</li>
-          <li>Co-presented the lab's peer-reviewed research poster to international robotics teams and industry experts.</li>
-          <li>Onboarded and mentored new student members on codebase standards, version control, and ROS.</li>
-        </ul>
-        <p><strong>Skills:</strong> ROS (Noetic / Humble), Python, YASMIN (State Machines), Task Planning, Robot Manipulation, Gazebo Simulation, Linux (Ubuntu), Git & Agile, Mentoring</p>
+        <div class="skill-group">
+          <h3>Tools &amp; libraries</h3>
+          <ul class="tags">
+            <li>Git</li><li>Linux (Ubuntu)</li><li>Docker</li><li>Docker Compose</li><li>FastAPI</li><li>Pygame</li><li>JavaFX</li>
+          </ul>
+        </div>
+
       </div>
-      
-      <!--
-      <div class="card">
-        <h3>TBC</h3>
-        <h4><strong>Duration: </strong><br><br></h4>
-        <p>
-          ...
-        </p>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+
+        <article class="edu">
+          <p class="project-meta">2024 - 2027</p>
+          <h3>King's College London</h3>
+          <p class="edu-degree"><strong>BSc</strong> Artificial Intelligence</p>
+          <p><strong>Current Grade Classification:</strong> 1st</p>
+          <p class="edu-label">Key modules (to name a few)</p>
+          <ul class="bullets">
+            <li>Cloud Computing for Artificial Intelligence</li>
+            <li>Web and Internet Systems</li>
+            <li>Machine Learning</li>
+            <li>Introduction to Robotics</li>
+            <li>Introduction to Professional Practice</li>
+            <li>Logic and Knowledge Representation</li>
+            <li>Mathematics and Statistics for Artificial Intelligence</li>
+          </ul>
+        </article>
+
+        <article class="edu">
+          <p class="project-meta">2017 - 2024</p>
+          <h3>St Ignatius College</h3>
+          <p><strong>A-levels:</strong> A*, A, A (Maths, Further Maths, Computer Science)</p>
+          <p><strong>GCSEs:</strong> 9 subjects with average grade of 8.2</p>
+        </article>
+
       </div>
-      -->
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Aldrich Fernandes</p>
-    <a href="https://github.com/Aldrich-Fernandes"> GitHub |</a> 
-    <a href="https://www.linkedin.com/in/aldrich-fernandes-31b764256/"> LinkedIn |</a> 
-    <a href="assets/CV/Aldrich_CV.pdf"> CV/Resume</a>
+    <p>© 2026 Aldrich Fernandes</p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="https://github.com/Aldrich-Fernandes">GitHub</a>
+      <a href="https://www.linkedin.com/in/aldrich-fernandes-31b764256/">LinkedIn</a>
+      <a href="assets/CV/Aldrich_CV.pdf">CV/Resume</a>
+    </nav>
   </footer>
 </body>
 </html>
